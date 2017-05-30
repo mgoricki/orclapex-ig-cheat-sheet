@@ -3,7 +3,7 @@ This Cheat Sheet is a collection of blog/forum posts related to APEX Grid from v
 
 ## Blog Posts
 
-###John Snyders (Oracle APEX dev team)
+### John Snyders (Oracle APEX dev team)
 
 [Interactive Grid: Under the Hood](http://hardlikesoftware.com/weblog/2016/06/08/interactive-grid-under-the-hood/)
 
