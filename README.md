@@ -57,4 +57,5 @@ model.setValue(record,'ENAME', vEname);
 ```
 
 ## Bugs
-5.1.1 [https://community.oracle.com/thread/4050038](gotoCell function)
+###5.1.1 
+[gotoCell function](https://community.oracle.com/thread/4050038)
