@@ -1,7 +1,9 @@
 # Oracle APEX Interactive Grid Cheat Sheet
 This Cheat Sheet is a collection of blog/forum posts related to APEX Grid from version 5.1.*
 
-## John Snyders (Oracle APEX dev team)
+## Blog Posts
+
+###John Snyders (Oracle APEX dev team)
 
 [Interactive Grid: Under the Hood](http://hardlikesoftware.com/weblog/2016/06/08/interactive-grid-under-the-hood/)
 
