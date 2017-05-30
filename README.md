@@ -55,3 +55,6 @@ var model       = grid.model;
 var record      = model.getRecord(vRecordId);
 model.setValue(record,'ENAME', vEname);
 ```
+
+## Bugs
+5.1.1 [https://community.oracle.com/thread/4050038](gotoCell function)
