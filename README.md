@@ -39,6 +39,10 @@ config.views.grid.features: resizeColumns, reorderColumns, sort
 ### Interactive Report vs Interactive Grid
 https://community.oracle.com/thread/4049804
 
+### Horizontal Scroll
+https://community.oracle.com/thread/4050640
+https://community.oracle.com/thread/3812273
+
 ## How To's
 
 ### Get Record
