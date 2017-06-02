@@ -43,6 +43,9 @@ https://community.oracle.com/thread/4049804
 https://community.oracle.com/thread/4050640
 https://community.oracle.com/thread/3812273
 
+### Interactive grid color based on a value
+https://community.oracle.com/thread/4047292
+
 ## How To's
 
 ### Get Record
