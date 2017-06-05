@@ -46,6 +46,12 @@ https://community.oracle.com/thread/3812273
 ### Interactive grid color based on a value
 https://community.oracle.com/thread/4047292
 
+### Grid Selection (copy to clipboard)
+https://community.oracle.com/thread/4051443
+
+### Higlight Row/Cell
+https://community.oracle.com/thread/4036606
+
 ## How To's
 
 ### Get Record
