@@ -76,3 +76,4 @@ model.setValue(record,'ENAME', vEname);
 [gotoCell function](https://community.oracle.com/thread/4050038)
 [#25974131 Error on Save - no data found for .](https://community.oracle.com/thread/4041014)
 [IG Required Pop-up LOV issue](https://community.oracle.com/thread/4052088)
+[IG Problems by Peter Raganitsch](https://community.oracle.com/thread/4032141)
