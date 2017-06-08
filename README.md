@@ -29,8 +29,12 @@ This Cheat Sheet is a collection of blog/forum posts related to APEX Grid from v
 ### Processing
 [Process Selected Rows](https://community.oracle.com/message/14204014)
 
-### Disabling
+### Disabled Cells
 [Disable Column Actions](https://community.oracle.com/thread/4030370)
+[How to validate disable cell in interactive grid?](https://community.oracle.com/thread/4018344)
+
+### Readonly Cells
+[Making Columns Readonly](http://lschilde.blogspot.hr/2017/03/apex-51-interactive-grid-making-columns.html?m=1)
 
 ### Disable Column Resize, Sort, Reorder Columns
 The noHeaderActivate option still allows resize, reordering and sorting columns. In 5.1.1 you can disable those features with the Advanced JavaScript Code the config options are
