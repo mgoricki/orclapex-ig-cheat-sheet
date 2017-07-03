@@ -53,7 +53,7 @@ https://community.oracle.com/thread/4047292
 ### Grid Selection (copy to clipboard)
 https://community.oracle.com/thread/4051443
 
-### Higlight Row/Cell
+### Highlight Row/Cell
 https://community.oracle.com/thread/4036606
 
 ## How To's
