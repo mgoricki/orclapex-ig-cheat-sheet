@@ -24,6 +24,7 @@ This Cheat Sheet is a collection of blog/forum posts related to APEX Grid from v
 ## OTN
 ### Hidden and display columns
 [How to set value of a hidden column](https://community.oracle.com/thread/4035826)
+
 [How to set value of a display column](https://community.oracle.com/thread/4047278)
 
 ### Processing
