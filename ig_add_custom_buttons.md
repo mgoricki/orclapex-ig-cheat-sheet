@@ -1,11 +1,13 @@
 ## Add Custom Buttons 
 
-It's explained more in http://hardlikesoftware.com/weblog/2017/01/24/how-to-hack-apex-interactive-grid-part-2/
+It's explained more in (http://hardlikesoftware.com/weblog/2017/01/24/how-to-hack-apex-interactive-grid-part-2/)
 
+```javascript
 function(config) {
     var $ = apex.jQuery,
         toolbarData = $.apex.interactiveGrid.copyDefaultToolbar(),
         toolbarGroup = toolbarData[toolbarData.length - 1]; // this is the last group with reset button
+        // you can also use toolbarData.toolbarFind("actions4");
 
     // add our own button
     toolbarGroup.controls.push( {
@@ -27,3 +29,4 @@ function(config) {
     }
     return config;
 }
+```
