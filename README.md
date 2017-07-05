@@ -85,3 +85,5 @@ model.setValue(record,'ENAME', vEname);
 [IG Required Pop-up LOV issue](https://community.oracle.com/thread/4052088)
 
 [IG Problems by Peter Raganitsch](https://community.oracle.com/thread/4032141)
+
+[Interactive grid 5.1.1.00.08 issues](https://community.oracle.com/thread/4030751)
