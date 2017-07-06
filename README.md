@@ -57,6 +57,9 @@ https://community.oracle.com/thread/4051443
 ### Highlight Row/Cell
 https://community.oracle.com/thread/4036606
 
+### Set Selected Rows After Refresh
+https://community.oracle.com/thread/4060416
+
 ## How To's
 
 ### Get Record
