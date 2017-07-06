@@ -60,6 +60,9 @@ https://community.oracle.com/thread/4036606
 ### Set Selected Rows After Refresh
 https://community.oracle.com/thread/4060416
 
+### Hide Toolbar
+https://community.oracle.com/thread/4060926
+
 ## How To's
 
 ### Get Record
