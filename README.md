@@ -82,6 +82,14 @@ var record      = model.getRecord(vRecordId);
 model.setValue(record,'ENAME', vEname);
 ```
 
+### Refresh Selected Rows (for Editable IG)
+```javascript
+apex.region("emp").widget().interactiveGrid("getActions").invoke("selection-refresh")
+```
+
+For non-editable IG look at
+http://roelhartman.blogspot.hr/2017/07/refresh-selected-rows-in-interactive.html
+
 ## Bugs
 ### 5.1.1 
 [gotoCell function](https://community.oracle.com/thread/4050038)
