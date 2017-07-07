@@ -87,10 +87,24 @@ model.setValue(record,'ENAME', vEname);
 apex.region("emp").widget().interactiveGrid("getActions").invoke("selection-refresh")
 ```
 
+### Refresh IG on tab activation
+1) Add static ID (for example tabs) to the tabs region.
+2) Add to page attribute execute when page loads:
+```javascript
+$("#tabs").on("atabsactivate", function(event, ui) {
+    if (ui.showing) {
+        ui.active.panel$.find(".a-GV").grid("refresh");
+    }
+});
+```
+
 For non-editable IG look at
 http://roelhartman.blogspot.hr/2017/07/refresh-selected-rows-in-interactive.html
 
 ## Bugs
+### 5.1.2.00.09
+[Bug 26403861](https://support.oracle.com/epmos/faces/BugDisplay?_afrLoop=531233910888612&id=26403861&_afrWindowMode=0&_adf.ctrl-state=p2g8xzuiu_4) - Detail IG region is not refreshed if not visible (in tab) - [Details from OTN](https://community.oracle.com/thread/4034432)
+
 ### 5.1.1 
 [gotoCell function](https://community.oracle.com/thread/4050038)
 
