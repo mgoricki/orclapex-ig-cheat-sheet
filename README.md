@@ -86,6 +86,8 @@ model.setValue(record,'ENAME', vEname);
 ```javascript
 apex.region("emp").widget().interactiveGrid("getActions").invoke("selection-refresh")
 ```
+For non-editable IG look at
+http://roelhartman.blogspot.hr/2017/07/refresh-selected-rows-in-interactive.html
 
 ### Refresh IG on tab activation
 1) Add static ID (for example tabs) to the tabs region.
@@ -97,9 +99,6 @@ $("#tabs").on("atabsactivate", function(event, ui) {
     }
 });
 ```
-
-For non-editable IG look at
-http://roelhartman.blogspot.hr/2017/07/refresh-selected-rows-in-interactive.html
 
 ## Bugs
 ### 5.1.2.00.09
