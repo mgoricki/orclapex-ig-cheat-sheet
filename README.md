@@ -100,9 +100,23 @@ $("#tabs").on("atabsactivate", function(event, ui) {
 });
 ```
 
+###  Hide Search Bar Field
+```javascript
+function(config) {
+    if (!config.toolbar) {
+        config.toolbar = {};
+    }
+    config.toolbar.searchField = false;
+    return config;
+}
+```
+
+In 5.1.2.00.09 there's a bug [Bug 26403439](https://support.oracle.com/epmos/faces/BugDisplay?_afrLoop=531782899244749&id=26403439&_afrWindowMode=0&_adf.ctrl-state=p2g8xzuiu_49). Workaround available [here](https://community.oracle.com/thread/4060926).
+
 ## Bugs
 ### 5.1.2.00.09
 [Bug 26403861](https://support.oracle.com/epmos/faces/BugDisplay?_afrLoop=531233910888612&id=26403861&_afrWindowMode=0&_adf.ctrl-state=p2g8xzuiu_4) - Detail IG region is not refreshed if not visible (in tab) - [Details from OTN](https://community.oracle.com/thread/4034432)
+[Bug 26403439](https://support.oracle.com/epmos/faces/BugDisplay?_afrLoop=531782899244749&id=26403439&_afrWindowMode=0&_adf.ctrl-state=p2g8xzuiu_49) - INTERACTIVE GRID SETTING TOOLBAR.SEARCHFIELD = FALSE DOES NOT HIDE SEARCH INPUT - [Details from OTN](https://community.oracle.com/thread/4060926)
 
 ### 5.1.1 
 [gotoCell function](https://community.oracle.com/thread/4050038)
