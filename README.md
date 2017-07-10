@@ -119,7 +119,7 @@ function (config){
 }
 ```
 
-By using this property you can still reorder columns by using keyboard or Columns dialog (tested in 5.1.2.00.09)
+By using this property you can still reorder columns by using keyboard or Columns dialog (tested in 5.1.2.00.09). Demo is available [here](https://apex.oracle.com/pls/apex/f?p=100309:38).
 
 ## Bugs
 ### 5.1.2.00.09
