@@ -119,13 +119,15 @@ function (config){
 }
 ```
 
-By using this property you can still reorder columns by using keyboard or Columns dialog (tested in 5.1.2.00.09). Demo is available [here](https://apex.oracle.com/pls/apex/f?p=100309:38).
+By using this property you can still reorder columns by using keyboard or Columns dialog (tested in 5.1.2.00.09) - known [Bug 26415403](https://support.oracle.com/epmos/faces/BugDisplay?_afrLoop=53048377940059&id=26415403&_afrWindowMode=0&_adf.ctrl-state=j4iheo2nj_4). Demo is available [here](https://apex.oracle.com/pls/apex/f?p=100309:38).
 
 ## Bugs
 ### 5.1.2.00.09
 [Bug 26403861](https://support.oracle.com/epmos/faces/BugDisplay?_afrLoop=531233910888612&id=26403861&_afrWindowMode=0&_adf.ctrl-state=p2g8xzuiu_4) - Detail IG region is not refreshed if not visible (in tab) - [Details from OTN](https://community.oracle.com/thread/4034432)
 
 [Bug 26403439](https://support.oracle.com/epmos/faces/BugDisplay?_afrLoop=531782899244749&id=26403439&_afrWindowMode=0&_adf.ctrl-state=p2g8xzuiu_49) - INTERACTIVE GRID SETTING TOOLBAR.SEARCHFIELD = FALSE DOES NOT HIDE SEARCH INPUT - [Details from OTN](https://community.oracle.com/thread/4060926)
+
+[Bug 26415403](https://support.oracle.com/epmos/faces/BugDisplay?_afrLoop=53048377940059&id=26415403&_afrWindowMode=0&_adf.ctrl-state=j4iheo2nj_4) - INTERACTIVE GRID SETTING VIEWS.GRID.FEATURES.REORDERCOLUMNS=FALSE DOES NOT WORK [Details from OTN](https://community.oracle.com/thread/4061833)
 
 ### 5.1.1 
 [gotoCell function](https://community.oracle.com/thread/4050038)
