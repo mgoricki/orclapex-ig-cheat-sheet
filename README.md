@@ -21,6 +21,8 @@ This Cheat Sheet is a collection of blog/forum posts related to APEX Grid from v
 
 [APEX Client-Side Validation](http://hardlikesoftware.com/weblog/2017/05/10/apex-client-side-validation/)
 
+[APEX Interactive Grid Cookbook](http://hardlikesoftware.com/weblog/2017/07/10/apex-interactive-grid-cookbook/)
+
 ## OTN
 ### Hidden and display columns
 [How to set value of a hidden column](https://community.oracle.com/thread/4035826)
