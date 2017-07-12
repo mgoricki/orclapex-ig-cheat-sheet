@@ -100,6 +100,15 @@ $("#tabs").on("atabsactivate", function(event, ui) {
 });
 ```
 
+### Refresh IG on Region Display Selector activation
+```javascript
+$('.apex-rds').data('onRegionChange', function(mode, activeTab) {  
+  if (activeTab.href != "#SHOW_ALL"){  
+    apex.region(activeTab.href.replace("#","")).refresh();  
+  }  
+});
+```
+
 ###  Hide Search Bar Field
 ```javascript
 function(config) {
