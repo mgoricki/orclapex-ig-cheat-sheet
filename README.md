@@ -132,6 +132,13 @@ function (config){
 
 By using this property you can still reorder columns by using keyboard or Columns dialog (tested in 5.1.2.00.09) - known [Bug 26415403](https://support.oracle.com/epmos/faces/BugDisplay?_afrLoop=53048377940059&id=26415403&_afrWindowMode=0&_adf.ctrl-state=j4iheo2nj_4). Demo is available [here](https://apex.oracle.com/pls/apex/f?p=100309:38).
 
+### Actions
+To list actions call:
+apex.region("emp").widget().interactiveGrid("getActions").list().forEach(function(a) { console.log("Action Label: " + a.label + ", Name: " + a.name + (a.choice !== undefined ? ", Choice: " + a.choice : "") ); });
+
+To call action use:
+apex.region("emp").widget().interactiveGrid("getActions").invoke("show-sort-dialog");
+
 ## Bugs
 ### 5.1.2.00.09
 [Bug 26403861](https://support.oracle.com/epmos/faces/BugDisplay?_afrLoop=531233910888612&id=26403861&_afrWindowMode=0&_adf.ctrl-state=p2g8xzuiu_4) - Detail IG region is not refreshed if not visible (in tab) - [Details from OTN](https://community.oracle.com/thread/4034432)
