@@ -73,6 +73,12 @@ var model       = grid.model;
 var record      = model.getRecord(vRecordId);
 ```
 
+### Get Model Options
+```javascript
+apex.region("emp").widget().interactiveGrid("getViews").grid.model.getOption("fields");
+```
+For possible options look at model.js defaultOptions object
+
 ### Set Column Value
 ```javascript
 var widget      = apex.region('emp').widget();
