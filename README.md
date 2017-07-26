@@ -134,7 +134,9 @@ By using this property you can still reorder columns by using keyboard or Column
 
 ### Actions
 To list actions call:
+```javascript
 apex.region("emp").widget().interactiveGrid("getActions").list().forEach(function(a) { console.log("Action Label: " + a.label + ", Name: " + a.name + (a.choice !== undefined ? ", Choice: " + a.choice : "") ); });
+```
 
 To call action use:
 apex.region("emp").widget().interactiveGrid("getActions").invoke("show-sort-dialog");
