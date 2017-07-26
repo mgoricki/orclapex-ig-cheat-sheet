@@ -151,6 +151,15 @@ function(config) {
 } 
 ```
 
+### Auto Add Row
+How to turn off auto add row feature:
+```javascript
+function(config) {  
+    config.editable.autoAddRow = false;
+    return config;
+} 
+```
+
 ## Bugs
 ### 5.1.2.00.09
 [Bug 26403861](https://support.oracle.com/epmos/faces/BugDisplay?_afrLoop=531233910888612&id=26403861&_afrWindowMode=0&_adf.ctrl-state=p2g8xzuiu_4) - Detail IG region is not refreshed if not visible (in tab) - [Details from OTN](https://community.oracle.com/thread/4034432)
