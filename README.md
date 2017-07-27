@@ -84,6 +84,16 @@ apex.region("emp").widget().interactiveGrid("getViews").grid.model.getOption("fi
 ```
 For possible options look at model.js defaultOptions object
 
+### Get Selected Records
+From the model:
+```javascript
+apex.region("emp").widget().interactiveGrid("getViews","grid").view$.grid("getSelectedRecords")  
+```
+
+Selected DOM elements
+```javascript
+apex.region("emp").widget().interactiveGrid("getViews","grid").view$.grid("getSelection")  
+```
 
 ### Set Column Value
 ```javascript
