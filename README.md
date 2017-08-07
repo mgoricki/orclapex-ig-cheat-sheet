@@ -71,7 +71,7 @@ https://community.oracle.com/thread/4068205
 ## How To's
 
 ### Get Record
-```javascript
+``` javascript
 var widget      = apex.region('emp').widget();
 var grid        = widget.interactiveGrid('getViews','grid');  
 var model       = grid.model; 
@@ -79,29 +79,29 @@ var record      = model.getRecord(vRecordId);
 ```
 
 ### Get Grid Options
-```javascript
+``` javascript
 apex.region("emp").widget().interactiveGrid("option","config")
 ```
 
 ### Get Model Options
-```javascript
+``` javascript
 apex.region("emp").widget().interactiveGrid("getViews").grid.model.getOption("fields");
 ```
 For possible options look at model.js defaultOptions object
 
 ### Get Selected Records
 From the model:
-```javascript
+``` javascript
 apex.region("emp").widget().interactiveGrid("getViews","grid").view$.grid("getSelectedRecords")  
 ```
 
 Selected DOM elements
-```javascript
+``` javascript
 apex.region("emp").widget().interactiveGrid("getViews","grid").view$.grid("getSelection")  
 ```
 
 ### Set Column Value
-```javascript
+``` javascript
 var widget      = apex.region('emp').widget();
 var grid        = widget.interactiveGrid('getViews','grid');  
 var model       = grid.model; 
@@ -110,7 +110,7 @@ model.setValue(record,'ENAME', vEname);
 ```
 
 ### Refresh Selected Rows (for Editable IG)
-```javascript
+``` javascript
 apex.region("emp").widget().interactiveGrid("getActions").invoke("selection-refresh")
 ```
 For non-editable IG look at
@@ -119,7 +119,7 @@ http://roelhartman.blogspot.hr/2017/07/refresh-selected-rows-in-interactive.html
 ### Refresh IG on tab activation
 1) Add static ID (for example tabs) to the tabs region.
 2) Add to page attribute execute when page loads:
-```javascript
+``` javascript
 $("#tabs").on("atabsactivate", function(event, ui) {
     if (ui.showing) {
         ui.active.panel$.find(".a-GV").grid("refresh");
@@ -128,7 +128,7 @@ $("#tabs").on("atabsactivate", function(event, ui) {
 ```
 
 ### Refresh IG on Region Display Selector activation
-```javascript
+``` javascript
 $('.apex-rds').data('onRegionChange', function(mode, activeTab) {  
   if (activeTab.href != "#SHOW_ALL"){  
     apex.region(activeTab.href.replace("#","")).refresh();  
@@ -137,7 +137,7 @@ $('.apex-rds').data('onRegionChange', function(mode, activeTab) {
 ```
 
 ###  Hide Search Bar Field
-```javascript
+``` javascript
 function(config) {
     if (!config.toolbar) {
         config.toolbar = {};
@@ -150,7 +150,7 @@ function(config) {
 In 5.1.2.00.09 there's a bug [Bug 26403439](https://support.oracle.com/epmos/faces/BugDisplay?_afrLoop=531782899244749&id=26403439&_afrWindowMode=0&_adf.ctrl-state=p2g8xzuiu_49). Workaround available [here](https://community.oracle.com/thread/4060926).
 
 ### Disable Column Reorder
-```javascript
+``` javascript
 function (config){
   config.views.grid.features.reorderColumns = false;
   return config;
@@ -161,7 +161,7 @@ By using this property you can still reorder columns by using keyboard or Column
 
 ### Actions
 To list actions call:
-```javascript
+``` javascript
 apex.region("emp").widget().interactiveGrid("getActions").list().forEach(function(a) { console.log("Action Label: " + a.label + ", Name: " + a.name + (a.choice !== undefined ? ", Choice: " + a.choice : "") ); });
 ```
 
@@ -169,7 +169,7 @@ To call action use:
 apex.region("emp").widget().interactiveGrid("getActions").invoke("show-sort-dialog");
 
 ### Persistant Row Selection
-```javascript
+``` javascript
 function(config) {  
     config.defaultGridViewOptions = {  
         persistSelection: true  
@@ -180,7 +180,7 @@ function(config) {
 
 ### Auto Add Row
 How to turn off auto add row feature:
-```javascript
+``` javascript
 function(config) {  
     config.editable.autoAddRow = false;
     return config;
