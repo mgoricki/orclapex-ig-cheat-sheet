@@ -65,6 +65,9 @@ https://community.oracle.com/thread/4060416
 ### Interactive Grid with more than one table
 https://community.oracle.com/message/14473170#14473170
 
+### How to validate IG column values on page load
+https://community.oracle.com/thread/4068205
+
 ## How To's
 
 ### Get Record
