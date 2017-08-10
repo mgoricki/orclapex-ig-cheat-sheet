@@ -168,6 +168,29 @@ apex.region("emp").widget().interactiveGrid("getActions").list().forEach(functio
 To call action use:
 apex.region("emp").widget().interactiveGrid("getActions").invoke("show-sort-dialog");
 
+### Adding Row Actions
+``` javascript
+apex.region("emp").widget()
+    .interactiveGrid("getViews").grid
+    .rowActionMenu$.menu("option")
+    .items.push({type:"action", label:"Hi", action: function(){alert("Hi")}});
+```
+
+More on [John's blog](http://hardlikesoftware.com/weblog/2017/01/24/how-to-hack-apex-interactive-grid-part-2/)
+
+### Removing Row Actions
+``` javascript
+function(config) {  
+  config.initActions = function( actions ) {  
+    actions.remove("row-duplicate");  
+  };  
+  return config;  
+}  
+```
+
+To list all action names see Actions paragraph above.
+More on [OTN](https://community.oracle.com/message/14320776#14320776)
+
 ### Persistant Row Selection
 ``` javascript
 function(config) {  
