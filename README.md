@@ -221,6 +221,8 @@ function(config) {
 * interactivegridselectionchange
 * interactivegridsave
 
+  Fires after the save event of the IG has finished. Similar to the "afterrefresh" event of an Interactive Reoprt. You can use this as a Custom Event in a Dynamic Action.
+
 
 ## Bugs
 ### 5.1.2.00.09
