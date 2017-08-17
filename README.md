@@ -211,12 +211,15 @@ function(config) {
 ```
 
 ### Interactive Grid Events
-interactivegridviewmodelcreate
-interactivegridviewchange
-interactivegridcreate
-interactivegridreportsettingschange
-interactivegridselectionchange
-interactivegridsave
+ * interactivegridviewmodelcreate
+   explanation and example here
+
+ * interactivegridviewchange
+ * interactivegridcreate
+ * interactivegridreportsettingschange
+ * interactivegridselectionchange
+ * interactivegridsave
+
 
 ## Bugs
 ### 5.1.2.00.09
