@@ -212,7 +212,8 @@ function(config) {
 
 ### Interactive Grid Events
  * interactivegridviewmodelcreate
-   explanation and example here
+ 
+  explanation and example here
 
  * interactivegridviewchange
  * interactivegridcreate
