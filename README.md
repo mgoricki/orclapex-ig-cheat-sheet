@@ -178,7 +178,7 @@ apex.region("emp").widget()
 
 More on [John's blog](http://hardlikesoftware.com/weblog/2017/01/24/how-to-hack-apex-interactive-grid-part-2/)
 
-To add custom row action to specific position in row action menu use this (only change second if statement):
+To add custom row action to specific position in row action menu use this JS code (only change second if statement) and add it to the Function and Global Variable Declaration page property:
 ``` javascript
 $(function() {
   $("#emp").on("interactivegridviewchange", function(event, data) {
