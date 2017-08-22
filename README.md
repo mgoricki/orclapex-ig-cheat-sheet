@@ -184,26 +184,28 @@ $(function() {
   $("#emp").on("interactivegridviewchange", function(event, data) {
     if ( data.view === "grid" && data.created ) {
       var view$ = apex.region("emp").widget().interactiveGrid("getViews", "grid");
-      var menu$ = view$.rowActionMenu$.menu("option").items;          
-      for (i = 0; i < menu$.length; i++ ) {
-        if (menu$[i].action === 'row-duplicate'){
-          menu$.splice(i+1
-                     , 0
-                     , {
-                        type:"action",
-                        label:"After Copy Action",
-                        icon: "fa fa-user",
-                        action: function(menu, element) {
-                          var record = view$.getContextRecord( element )[0];
-                          alert('After copy action: '+view$.model.getValue(record, "EMPNO"));
-                        }
-                       })
-          break;
+      if (view$.rowActionMenu$){
+        var menu$ = view$.rowActionMenu$.menu("option").items;          
+        for (i = 0; i < menu$.length; i++ ) {
+          if (menu$[i].action === 'row-duplicate'){
+            menu$.splice(i+1
+                       , 0
+                       , {
+                          type:"action",
+                          label:"After Copy Action",
+                          icon: "fa fa-user",
+                          action: function(menu, element) {
+                            var record = view$.getContextRecord( element )[0];
+                            alert('After copy action: '+view$.model.getValue(record, "EMPNO"));
+                          }
+                         })
+            break;
+          }
         }
-      }
+      }  
     }        
   });
-}); 
+});  
 ```
 
 Demo is available [here](https://apex.oracle.com/pls/apex/f?p=100309:41) 
