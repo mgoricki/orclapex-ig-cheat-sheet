@@ -242,6 +242,18 @@ function(config) {
 } 
 ```
 
+### Hide Grid Footer
+``` javascript
+function(config) {  
+    config.defaultGridViewOptions = {  
+        footer: false  
+    };  
+    return config;   
+}  
+```
+
+There are also options for other grid views (defaultIconViewOptions, defaultIconViewOptions, defaultDetailViewOptions).
+
 ### Interactive Grid Events
 * interactivegridviewmodelcreate
 
