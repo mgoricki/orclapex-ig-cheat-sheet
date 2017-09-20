@@ -62,6 +62,9 @@ https://community.oracle.com/thread/4036606
 ### Set Selected Rows After Refresh
 https://community.oracle.com/thread/4060416
 
+### More About Selecting Grid Rows
+https://community.oracle.com/thread/4030402
+
 ### Interactive Grid with more than one table
 https://community.oracle.com/message/14473170#14473170
 
