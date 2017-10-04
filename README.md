@@ -280,7 +280,8 @@ function(config) {
 }
 ```
 
-### Interactive Grid Events
+## Interactive Grid Events
+
 * interactivegridviewmodelcreate
 
   explanation and example here
