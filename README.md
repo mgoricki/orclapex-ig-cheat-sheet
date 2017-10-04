@@ -257,6 +257,29 @@ function(config) {
 
 There are also options for other grid views (defaultIconViewOptions, defaultIconViewOptions, defaultDetailViewOptions).
 
+### Row Selector Properties
+Declarative properties override config properties. To enable config properties, delete Row Selector column.
+Possible properties are multiple and selectAll:
+``` javascript
+function(config) {
+    config.defaultGridViewOptions = {
+        multiple: true,
+        selectAll: true    
+    }
+    return config; 
+}
+```
+
+You can set rowHeader to sequence to display rownumbers instead of selector:
+``` javascript
+function(config) {
+    config.defaultGridViewOptions = {
+        rowHeader: 'sequence'
+    }
+    return config; 
+}
+```
+
 ### Interactive Grid Events
 * interactivegridviewmodelcreate
 
