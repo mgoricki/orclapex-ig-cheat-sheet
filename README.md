@@ -292,6 +292,32 @@ function(config) {
 * interactivegridsave
 
   Fires after the save event of the IG has finished. Similar to the "afterrefresh" event of an Interactive Report. You can use this as a Custom Event in a Dynamic Action.
+  
+## Column Configuration
+
+### Disable header activation
+From version 5.1.1 it's possible to disable column header menu:
+```javascript
+function(config) {
+    config.defaultGridColumnOptions = {
+        noHeaderActivate: true
+    };  
+    return config;
+}
+```
+
+The noHeaderActivate option still allows resize, reordering and sorting of columns.
+
+Also, it's possible to disable specific feature:
+```javascript
+function(config) {
+    // create 'features' object if it does not exist
+    config.features = config.features || {};
+    config.features.sort = false;
+    config.features.aggregate = false;
+    return config;
+}
+```
 
 
 ## Bugs
