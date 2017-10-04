@@ -159,8 +159,27 @@ function (config){
   return config;
 }
 ```
+or (from 5.1.1):
+```javascript
+function(config) {
+    config.defaultGridViewOptions = {
+        reorderColumns: false
+    }
+    return config;
+}
+```
 
 By using this property you can still reorder columns by using keyboard or Columns dialog (tested in 5.1.2.00.09) - known [Bug 26415403](https://support.oracle.com/epmos/faces/BugDisplay?_afrLoop=53048377940059&id=26415403&_afrWindowMode=0&_adf.ctrl-state=j4iheo2nj_4). Demo is available [here](https://apex.oracle.com/pls/apex/f?p=100309:38).
+
+### Disable Column Resize
+```javascript
+function(config) {
+    config.defaultGridViewOptions = {
+        resizeColumns: false
+    }
+    return config;
+}
+```
 
 ### Actions
 To list actions call:
