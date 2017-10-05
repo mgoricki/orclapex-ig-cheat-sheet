@@ -103,6 +103,12 @@ Selected DOM elements
 apex.region("emp").widget().interactiveGrid("getViews","grid").view$.grid("getSelection")  
 ```
 
+### Check Edit Mode
+To check if IG is in edit mode use this:
+``` javascript
+apex.region("emp").widget().interactiveGrid("getActions").get("edit")
+``` 
+
 ### Set Column Value
 ``` javascript
 var widget      = apex.region('emp').widget();
