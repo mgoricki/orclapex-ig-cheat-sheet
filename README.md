@@ -305,6 +305,22 @@ function(config) {
 }
 ```
 
+### Cancel changes and refresh grid
+``` javascript
+var ig$ = apex.region("emp").widget(),
+    view = ig$.interactiveGrid("getCurrentView");
+
+if ( view.internalIdentifier === "grid" ) { // only grid supports editing
+    view.model.clearChanges();
+}
+apex.region("emp").refresh();
+```
+
+### Focus IG
+``` javascript
+apex.region("regionStaticID").focus();
+```
+
 ## Interactive Grid Events
 
 * interactivegridviewmodelcreate
