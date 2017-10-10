@@ -361,6 +361,14 @@ function(config) {
 }
 ```
 
+## CSS
+
+```css
+.a-GV-table td {
+    white-space: normal;
+	word-wrap: break-word;
+} 
+```
 
 ## Bugs
 ### 5.1.2.00.09
