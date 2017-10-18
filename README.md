@@ -23,6 +23,11 @@ This Cheat Sheet is a collection of blog/forum posts related to APEX Grid from v
 
 [APEX Interactive Grid Cookbook](http://hardlikesoftware.com/weblog/2017/07/10/apex-interactive-grid-cookbook/)
 
+## Other Links
+[Interactive Grid: Download as PDF with jsPDF by MENNO HOOGENDIJK](https://t.co/RtXQgxbQSg)
+
+[Pimp my Grid App - IG Sample App](https://apex.oracle.com/pls/apex/f?p=pimpmygrid)
+
 ## OTN
 ### Hidden and display columns
 [How to set value of a hidden column](https://community.oracle.com/thread/4035826)
