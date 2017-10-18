@@ -366,6 +366,15 @@ function(config) {
 }
 ```
 
+## CSS
+
+Defining that no '...' will be rendered inside your interactive grid and the complete content will be shown in multiple lines if the column is not wide enough.
+```css
+.a-GV-table td {
+    white-space: normal;
+word-wrap: break-word;
+} 
+```
 
 ## Bugs
 ### 5.1.2.00.09
