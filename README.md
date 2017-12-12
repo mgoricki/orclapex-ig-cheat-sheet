@@ -28,7 +28,7 @@ This Cheat Sheet is a collection of blog/forum posts related to APEX Grid from v
 
 [Pimp my Grid App - IG Sample App](https://apex.oracle.com/pls/apex/f?p=pimpmygrid)
 
-[How to Fix Blank Toolbar DIV](apexbyg.blogspot.com/2017/12/interactive-grid-how-to-fix-blank.html)
+[How to Fix Blank Toolbar DIV](https://apexbyg.blogspot.com/2017/12/interactive-grid-how-to-fix-blank.html)
 
 ## OTN
 ### Hidden and display columns
