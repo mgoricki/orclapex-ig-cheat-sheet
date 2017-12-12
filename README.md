@@ -28,6 +28,8 @@ This Cheat Sheet is a collection of blog/forum posts related to APEX Grid from v
 
 [Pimp my Grid App - IG Sample App](https://apex.oracle.com/pls/apex/f?p=pimpmygrid)
 
+[How to Fix Blank Toolbar DIV](apexbyg.blogspot.com/2017/12/interactive-grid-how-to-fix-blank.html)
+
 ## OTN
 ### Hidden and display columns
 [How to set value of a hidden column](https://community.oracle.com/thread/4035826)
@@ -367,7 +369,9 @@ function(config) {
 ```
 
 
+
 ## Bugs
+
 ### 5.1.2.00.09
 
 Bug 26147254 - Duplicated private reports - [Details from OTN](https://community.oracle.com/thread/4047778)
