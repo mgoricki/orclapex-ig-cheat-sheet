@@ -392,3 +392,6 @@ Bug 26147254 - Duplicated private reports - [Details from OTN](https://community
 [IG Problems by Peter Raganitsch](https://community.oracle.com/thread/4032141)
 
 [Interactive grid 5.1.1.00.08 issues](https://community.oracle.com/thread/4030751)
+
+### 5.1.4
+[Adding toolbar buttons to more than one IG on page](https://community.oracle.com/thread/4128361)
