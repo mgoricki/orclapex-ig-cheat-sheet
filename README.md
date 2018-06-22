@@ -80,6 +80,8 @@ https://community.oracle.com/thread/4068205
 
 ## How To's
 
+- [Pagination How To's](ig_pagination.md)
+
 ### Get Record
 ``` javascript
 var widget      = apex.region('emp').widget();
@@ -327,6 +329,7 @@ apex.region("emp").refresh();
 ``` javascript
 apex.region("regionStaticID").focus();
 ```
+
 
 ## Interactive Grid Events
 
