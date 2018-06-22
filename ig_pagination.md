@@ -9,6 +9,8 @@ instead of
 apex.region("emp").call
 ```
 
+Demo is available [here](https://apex.oracle.com/pls/apex/f?p=59127:30:114522178173858::NO:::).
+
 ## Get Rows Per Page
 ``` javascript
 apex.region("emp").call("getViews").grid.view$.data("apex-grid").pageSize;
