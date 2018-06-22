@@ -82,46 +82,56 @@ https://community.oracle.com/thread/4068205
 
 - [Pagination How To's](ig_pagination.md)
 
+
+## Get Widget
+Before APEX 18.1 you should use:
+``` javascript
+apex.region("emp").widget().interactiveGrid
+```
+instead of 
+``` javascript
+apex.region("emp").call
+```
+
+
 ### Get Record
 ``` javascript
-var widget      = apex.region('emp').widget();
-var grid        = widget.interactiveGrid('getViews','grid');  
-var model       = grid.model; 
-var record      = model.getRecord(vRecordId);
+var grid    = apex.region('emp').call('getViews','grid'); 
+var model   = grid.model; 
+var record  = model.getRecord(vRecordId);
 ```
 
 ### Get Grid Options
 ``` javascript
-apex.region("emp").widget().interactiveGrid("option","config")
+apex.region("emp").call("option","config")
 ```
 
 ### Get Model Options
 ``` javascript
-apex.region("emp").widget().interactiveGrid("getViews").grid.model.getOption("fields");
+apex.region("emp").call("getViews").grid.model.getOption("fields");
 ```
 For possible options look at model.js defaultOptions object
 
 ### Get Selected Records
 From the model:
 ``` javascript
-apex.region("emp").widget().interactiveGrid("getViews","grid").view$.grid("getSelectedRecords")  
+apex.region("emp").call("getViews","grid").view$.grid("getSelectedRecords")  
 ```
 
 Selected DOM elements
 ``` javascript
-apex.region("emp").widget().interactiveGrid("getViews","grid").view$.grid("getSelection")  
+apex.region("emp").call("getViews","grid").view$.grid("getSelection")  
 ```
 
 ### Check Edit Mode
 To check if IG is in edit mode use this:
 ``` javascript
-apex.region("emp").widget().interactiveGrid("getActions").get("edit")
+apex.region("emp").call("getActions").get("edit")
 ``` 
 
 ### Set Column Value
 ``` javascript
-var widget      = apex.region('emp').widget();
-var grid        = widget.interactiveGrid('getViews','grid');  
+var grid        = apex.region('emp').call('getViews','grid');  
 var model       = grid.model; 
 var record      = model.getRecord(vRecordId);
 model.setValue(record,'ENAME', vEname);
@@ -129,7 +139,7 @@ model.setValue(record,'ENAME', vEname);
 
 ### Refresh Selected Rows (for Editable IG)
 ``` javascript
-apex.region("emp").widget().interactiveGrid("getActions").invoke("selection-refresh")
+apex.region("emp").call("getActions").invoke("selection-refresh")
 ```
 For non-editable IG look at
 http://roelhartman.blogspot.hr/2017/07/refresh-selected-rows-in-interactive.html
@@ -199,16 +209,16 @@ function(config) {
 ### Actions
 To list actions call:
 ``` javascript
-apex.region("emp").widget().interactiveGrid("getActions").list().forEach(function(a) { console.log("Action Label: " + a.label + ", Name: " + a.name + (a.choice !== undefined ? ", Choice: " + a.choice : "") ); });
+apex.region("emp").call("getActions").list().forEach(function(a) { console.log("Action Label: " + a.label + ", Name: " + a.name + (a.choice !== undefined ? ", Choice: " + a.choice : "") ); });
 ```
 
 To call action use:
-apex.region("emp").widget().interactiveGrid("getActions").invoke("show-sort-dialog");
+apex.region("emp").call("getActions").invoke("show-sort-dialog");
 
 ### Adding Row Actions
 ``` javascript
-apex.region("emp").widget()
-    .interactiveGrid("getViews").grid
+apex.region("emp")
+    .call("getViews").grid
     .rowActionMenu$.menu("option")
     .items.push({type:"action", label:"Hi", action: function(){alert("Hi")}});
 ```
@@ -220,7 +230,7 @@ To add custom row action to specific position in row action menu use this JS cod
 $(function() {
   $("#emp").on("interactivegridviewchange", function(event, data) {
     if ( data.view === "grid" && data.created ) {
-      var view$ = apex.region("emp").widget().interactiveGrid("getViews", "grid");
+      var view$ = apex.region("emp").call("getViews", "grid");
       if (view$.rowActionMenu$){
         var menu$ = view$.rowActionMenu$.menu("option").items;          
         for (i = 0; i < menu$.length; i++ ) {
@@ -316,8 +326,7 @@ function(config) {
 
 ### Cancel changes and refresh grid
 ``` javascript
-var ig$ = apex.region("emp").widget(),
-    view = ig$.interactiveGrid("getCurrentView");
+var view = apex.region("emp").call("getCurrentView");
 
 if ( view.internalIdentifier === "grid" ) { // only grid supports editing
     view.model.clearChanges();
