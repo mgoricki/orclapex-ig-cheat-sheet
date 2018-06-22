@@ -45,6 +45,13 @@ apex.region("emp").call("getViews").grid.view$.grid('previousPage');
 
 // Next Page
 apex.region("emp").call("getViews").grid.view$.grid('nextPage');
+
+// Go To Page (it's zero based - 0 goes to page 1)
+apex.region("emp").call("getViews").grid.view$.grid('gotoPage',0);
+
+// Get Current Page
+var gridData = apex.region("emp").call("getViews").grid.view$.data("apex-grid");
+var currentPage = Math.floor(gridData.pageOffset / gridData.pageSize) + 1;
 ```
 
 ## Get Current Page
