@@ -164,13 +164,24 @@ $('.apex-rds').data('onRegionChange', function(mode, activeTab) {
 });
 ```
 
-###  Hide Search Bar Field
+###  Hide Toolbar Search Bar Field
 ``` javascript
 function(config) {
     if (!config.toolbar) {
         config.toolbar = {};
     }
     config.toolbar.searchField = false;
+    return config;
+}
+```
+
+###  Hide Toolbar Action Menu
+``` javascript
+function(config) {
+    if (!config.toolbar) {
+        config.toolbar = {};
+    }
+    config.toolbar.actionMenu = false;
     return config;
 }
 ```
