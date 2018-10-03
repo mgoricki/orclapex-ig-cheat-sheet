@@ -1,6 +1,12 @@
 # Oracle APEX Interactive Grid Cheat Sheet
 This Cheat Sheet is a collection of blog/forum posts related to APEX Grid from version 5.1.*
 
+## Oracle Documentation
+From APEX 18.2 there's Interactive Grid documentation available on https://docs.oracle.com/database/apex-18.2/AEXJS/interactiveGrid.html
+
+
+
+
 ## Blog Posts
 
 ### John Snyders (Oracle APEX dev team)
@@ -22,6 +28,8 @@ This Cheat Sheet is a collection of blog/forum posts related to APEX Grid from v
 [APEX Client-Side Validation](http://hardlikesoftware.com/weblog/2017/05/10/apex-client-side-validation/)
 
 [APEX Interactive Grid Cookbook](http://hardlikesoftware.com/weblog/2017/07/10/apex-interactive-grid-cookbook/)
+
+[Some minor new things in APEX 18.2](http://hardlikesoftware.com/weblog/2018/09/28/some-minor-new-things-in-apex-18-2/)
 
 ## Other Links
 [Interactive Grid: Download as PDF with jsPDF by MENNO HOOGENDIJK](https://t.co/RtXQgxbQSg)
