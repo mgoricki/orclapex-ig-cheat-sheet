@@ -358,6 +358,25 @@ apex.region("emp").refresh();
 apex.region("regionStaticID").focus();
 ```
 
+### Disable Button based on current row's column value
+
+It's important to set Static ID property of the button (in this example it's btnSubmit)
+
+``` javascript
+var vModel = this.data.model;
+var vRecord = this.data.selectedRecords[0];
+if(vRecord){
+  vColValue = vModel.getValue(vRecord, 'JOB');
+  if(vColValue=='MANAGER'){
+    apex.item('btnSubmit').disable();
+  }else{    
+    apex.item('btnSubmit').enable();    
+  }
+}
+```
+
+Demo is available [here](https://apex.oracle.com/pls/apex/f?p=100309:60).
+
 
 ## Interactive Grid Events
 
