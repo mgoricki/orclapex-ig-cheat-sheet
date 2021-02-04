@@ -378,7 +378,7 @@ if(vRecord){
 Demo is available [here](https://apex.oracle.com/pls/apex/f?p=100309:60).
 
 
-## Hide Add Row Button on empty detail IG
+### Hide Add Row Button on empty detail IG
 
 - Create Selection Change DA on detail region (in this example with static ID emp) and add true action Execute JavaScript Code:
 ``` javascript
