@@ -378,6 +378,20 @@ if(vRecord){
 Demo is available [here](https://apex.oracle.com/pls/apex/f?p=100309:60).
 
 
+## Hide Add Row Button on empty detail IG
+
+- Create Selection Change DA on detail region (in this example with static ID emp) and add true action Execute JavaScript Code:
+``` javascript
+if (this.data.model.getTotalRecords()==0){
+  $('#emp button[data-action=selection-add-row]').hide()
+}else{
+  $('#emp button[data-action=selection-add-row]').show()
+}
+```
+Check if attribute "Add Row If Empty" is switched off.
+
+
+
 ## Interactive Grid Events
 
 * interactivegridviewmodelcreate
